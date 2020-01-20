@@ -330,5 +330,30 @@ router.get('/github/:username', async(req,res) => {
     console.error(err.message);
     res.status(404).send('Server error');
   }
-})
+});
+
+router.get('/codeforces/:username', async(req,res) => {
+  try {
+    const options = {
+      uri:`https://codeforces.com/api/user.info?handles=${req.params.username}`,
+      method:'GET',
+      headers:{'user-agent':'node.js'}
+    };
+
+    request(options,(error,response,body) => {
+      if(error) console.error(error);
+
+      if(response.statusCode!=200){
+        res.status(404).json({msg:'No codeforces profile found'});
+      }
+
+      res.json(JSON.parse(body));
+
+    });
+  } catch(err) {
+    console.error(err.message);
+    res.status(404).send('Server error');
+  }
+});
+
 module.exports = router;
