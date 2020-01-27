@@ -332,6 +332,10 @@ router.get('/github/:username', async(req,res) => {
   }
 });
 
+//@route GET api/profile/codeforces/:username
+//@desc  Get user Info from Github
+//@access PUBLIC
+
 router.get('/codeforces/:username', async(req,res) => {
   try {
     const options = {
