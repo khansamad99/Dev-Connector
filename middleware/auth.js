@@ -9,7 +9,7 @@ module.exports = function(req,res,next) {
         return res.status(401).json({msg:'No token,authorization header'});
     }
 
-    //Verifu token
+    //Verify token
     try {
         const decoded = jwt.verify(token,config.get('jwtSecret'));
 

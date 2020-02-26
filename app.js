@@ -20,7 +20,7 @@ app.use('/api/profile', require('./route/api/profile'));
 app.use('/api/auth', require('./route/api/auth'));
 app.use('/api/posts', require('./route/api/posts'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`App is running on ${PORT}`);

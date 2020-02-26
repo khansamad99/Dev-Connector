@@ -106,7 +106,7 @@ router.post(
 );
 
 
-//@route POST api/profile/users/:user_id
+//@route get api/profile/users/:user_id
 //@desc  
 //@access PUBLIC
 router.get('/users/:user_id',async (req,res) => {
