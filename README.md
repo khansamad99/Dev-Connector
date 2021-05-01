@@ -12,4 +12,12 @@ A MERN Stack Social Network Website for Developers.
 - View Posts
 - Like,Dislike,Comment on Posts
 
-![screenshot](https://github.com/bradtraversy/proshop_mern/blob/master/uploads/Screen%20Shot%202020-09-29%20at%205.50.52%20PM.png)
+![screenshot](https://github.com/khansamad99/Dev-Connector/blob/master/Screenshot%20(80).png)
+
+![screenshot](https://github.com/khansamad99/Dev-Connector/blob/master/Screenshot%20(82).png)
+
+![screenshot](https://github.com/khansamad99/Dev-Connector/blob/master/Screenshot%20(83).png)
+
+
+
+
